@@ -48,6 +48,9 @@ public class Utils {
     */
 
 public static int countOccurrences(int[] nums, int target) {
+    if (nums == null || nums.length == 0) {
+        return 0;
+    }
     int count = 0;
 
     for (int num : nums) {
@@ -57,5 +60,5 @@ public static int countOccurrences(int[] nums, int target) {
     }
 
     return count;
-}
+    }
 }
