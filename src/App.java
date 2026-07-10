@@ -1,36 +1,36 @@
 public class App {
     public static void Edgecases() {
-        /*  --- Edge Case: null array ---
+        // --- Edge Case: null array ---
         int[] caseNull = null;
-        System.out.println("Null array → " + countOccurrences(caseNull, 5));
+        System.out.println("Null array " + Utils.countOccurrences(caseNull, 5));
 
         // --- Edge Case: empty array ---
         int[] caseEmpty = new int[0];
-        System.out.println("Empty array → " + countOccurrences(caseEmpty, 5));
+        System.out.println("Empty array " + Utils.countOccurrences(caseEmpty, 5));
 
         // --- Edge Case: single element (match) ---
         int[] caseSingleMatch = {5};
-        System.out.println("Single element (match) → " + countOccurrences(caseSingleMatch, 5));
+        System.out.println("Single element (match) " + Utils.countOccurrences(caseSingleMatch, 5));
 
         // --- Edge Case: single element (no match) ---
         int[] caseSingleNoMatch = {3};
-        System.out.println("Single element (no match) → " + countOccurrences(caseSingleNoMatch, 5));
+        System.out.println("Single element (no match) " + Utils.countOccurrences(caseSingleNoMatch, 5));
 
         // --- Edge Case: negative numbers ---
         int[] caseNegative = {-1, -5, -5, -2};
-        System.out.println("Negative numbers → " + countOccurrences(caseNegative, -5));
+        System.out.println("Negative numbers " + Utils.countOccurrences(caseNegative, -5));
 
         // --- Edge Case: all equal elements (match) ---
         int[] caseAllEqualMatch = {7, 7, 7, 7};
-        System.out.println("All equal (match) → " + countOccurrences(caseAllEqualMatch, 7));
+        System.out.println("All equal (match) " + Utils.countOccurrences(caseAllEqualMatch, 7));
 
         // --- Edge Case: all equal elements (no match) ---
         int[] caseAllEqualNoMatch = {7, 7, 7, 7};
-        System.out.println("All equal (no match) → " + countOccurrences(caseAllEqualNoMatch, 5));
+        System.out.println("All equal (no match) " + Utils.countOccurrences(caseAllEqualNoMatch, 5));
 
         // --- Edge Case: mixed values ---
         int[] caseMixed = {1, 5, 3, 5, 2, 5};
-        System.out.println("Mixed values → " + countOccurrences(caseMixed, 5));*/
+        System.out.println("Mixed values " + Utils.countOccurrences(caseMixed, 5));
         //sumOfEvens, CountOccurrences.
 
          int[] numbers = {1, 2, 3, 4, 5, 6};
@@ -53,7 +53,7 @@ public class App {
         System.out.println(ana.equals(anaj)); // Output: true
     }
     public static void main(String[] args) throws Exception {
-        //Edgecases();
+        Edgecases();
         StudentTest();     
     }
 }
