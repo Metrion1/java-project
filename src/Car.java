@@ -33,6 +33,8 @@ public class Car {
             setWheels(wheels);
         } catch (IllegalArgumentException e) {
             System.out.println("Error setting wheels: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("An unexpected error occurred while setting wheels: " + e.getMessage());
         }
     }
 // add overide method
