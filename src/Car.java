@@ -26,10 +26,19 @@ public class Car {
         }
         this.wheels = wheels;
     }
+//add try catch block for the setWheels method to handle the exception and print a message to the console.
+
+    public void setWheelsWithException(Wheel[] wheels) {
+        try {
+            setWheels(wheels);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error setting wheels: " + e.getMessage());
+        }
+    }
 // add overide method
 @Override
     public String toString() {
         return "Car [engine=" + engine + ", wheels=" + java.util.Arrays.toString(wheels) + "]";
     }
-//add try catch block for the setWheels method to handle the exception and print a message to the console.
+    
 }
