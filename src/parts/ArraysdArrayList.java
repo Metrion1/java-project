@@ -41,11 +41,10 @@ public class ArraysdArrayList {
 
         System.out.println("ArrayList element while loop:");
         numbers.add(6);
-        numbers.add("7"); // This line will throw a compile-time error because "7" is a String, not an
-                          // Integer
-        int index = 0;
-        while (index < numbers.size()) {
-            System.out.println(numbers.get(index));
+        //numbers.add("7"); // This line will throw a compile-time error because "7" is a String, not an Integer
+        int index = 0; // index variable for while loop
+        while (index < numbers.size()) { // while loop to print ArrayList elements
+            System.out.println(numbers.get(index)); // get() method to access elements in ArrayList
             index++;
         }
     }
