@@ -30,6 +30,9 @@ public class Engine {
 public void setType(String type) {
     //trim and convert to lowercase for consistency
     type = type.trim().toLowerCase();
+    /*if type == null || type.isEmpty()) {
+        throw new IllegalArgumentException("Engine type cannot be null or empty.");
+    }*/
     
     //precondition: type must be a valid engine type.
     if (type == null ||

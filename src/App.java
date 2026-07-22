@@ -78,10 +78,11 @@ public class App {
             double pressure = scanner.nextDouble();
             wheels[i] = new Wheel(size, pressure);
 
+
+        }
             Car car = new Car();
             car.Engine(engine);
             car.setWheels(wheels);
-        }
         }
         catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
