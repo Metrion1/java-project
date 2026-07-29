@@ -1,8 +1,6 @@
-package parts;
-
 import java.util.ArrayList;
 
-public class ArraysdArrayList {
+public class ArraysandArrayList {
 
     public static void ArrayExample() {
         int[] numbers = { 1, 2, 3, 4, 5 };
