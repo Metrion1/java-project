@@ -1,18 +1,70 @@
-## Getting Started
+# Student Record Holder #
+## StudentsRecordHolder
+ ├── Student.java          # Student data model
+ ├── StudentManager.java   # Handles storage and operations
+ └── Main.java             # Menu, input handling, and program entry point
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+ ###  Add Student
+Prompts for ID, name, and score
 
-## Folder Structure
+Prevents duplicate IDs
 
-The workspace contains two folders by default, where:
+Validates numeric input
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+List Students
+Displays all stored students
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Shows a message if the list is empty
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Search Student
+Search by ID
 
-## Dependency Management
+Prints the student or “not found”
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Update Student
+Change names and score for an existing student
+
+Remove Student
+Deletes a student by ID
+
+Recursive Count
+Counts all students using a recursive method:
+
+#### How to run the Program.
+Open File in VSCode
+-Compile the program-
+javac StudentsRecordHolder/*.java
+-Run the Program-
+java StudentsRecordHolder.Main
+-Use the Menu-
+=== Student Record Menu ===
+1. Add Student
+2. List Students
+3. Search Student
+4. Update Student
+5. Remove Student
+6. Count Students (Recursive)
+7. Quit
+
+-Test cases-
+The program includes automated test cases that run when the program starts.
+These tests:
+
+Adding multiple students
+
+Attempting to add a duplicate ID
+
+Listing students
+
+Searching existing and non-existing IDs
+
+Updating a student
+
+Removing a student
+
+Recursive counting
+
+Input validation
+
+You can also test manually using the menu.
+
